@@ -1,0 +1,1923 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary: rgb(185, 128, 53);
+    --secondary: black;
+    --background: white;
+    --text-color: rgb(63, 63, 63);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+
+@media (min-width: 950px) {
+
+    .spod {
+        display: none;
+    }
+    .container-uvod {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .sachovnice-2 {
+        display: none;
+    }
+    .slogan2-1 {
+        display: none;
+    }
+
+    .vrch {
+        display: none;
+    }
+
+    .carky {
+        display: none;
+    }
+
+    .krizek {
+        display: none;
+    }
+    
+    .pozadi {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("img/pozadi3.1.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        z-index: -1;
+    }
+    
+    .nav {
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .vrch2 {
+        background-color: var(--primary);
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 30px;
+        padding-right: 40px;
+        color: white;
+        font-family: Poppins;
+    }
+    
+    .spod2 {
+        background-color: 0;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 40px;
+        gap: 30px;
+    }
+    
+    .vrc2 p {
+        font-family: Poppins;
+        color: var(--background);
+    }
+    
+    .spod2 a {
+        color: var(--background);
+        text-decoration: none;
+        text-transform: none;
+        font-family: Poppins;
+    }
+    
+    .spod2 a:hover {
+        color: var(--primary);
+    }
+    
+    .special {
+    
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+        border-bottom: solid 4px var(--secondary);
+    }
+    
+    .normal {
+        background-color: var(--primary);
+        padding: 7px 10px;
+    }
+    
+    .normal a:hover {
+        color: var(--secondary);
+    }
+    
+    .soc {
+        background-color: var(--secondary);
+        height: 100%;
+        padding: 5px 10px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-nadpis {
+        position: absolute;
+        background-color: 0;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        
+    }
+    
+    .nadpis {
+        background-color: 0;
+        width: 600px;
+        margin-left: 120px;
+    }
+    
+    .nadpis h1 {
+        font-family: Poppins;
+        font-size: 4vw;
+        line-height: 1.2;
+        color: var(--background);
+    }
+    
+    .slogan {
+        background-color: var(--primary);
+        width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slogan a {
+        font-size: 28px;
+        color: var(--background);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .slogan2 {
+        background-color: var(--primary);
+        height: 115px;
+        width: 400px;
+        margin-left: 180px;
+        padding: 10px 20px;
+        position: absolute;
+        top: 85%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .slogan2 p {
+        color: var(--background);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 32px;
+    }
+    
+    
+    .kdo-jsme {
+        position: relative;
+        width: 100%;
+        background-color: aqu;
+        padding-top: 40px;
+    }
+    
+    .obsah {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: 0;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .obsah h2 {
+        font-size: 42px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--primary);
+    }
+    
+    .obsah p {
+        font-family: Poppins;
+        font-size: 20px;
+        color: var(--text-color);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .container-line {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .co-umime{
+        position: relative;
+        padding-top: 40px;
+    }
+    
+    .nadpis2 {
+        text-align: center;
+    }
+    
+    .co-umime h2 {
+        font-size: 42px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--primary);
+    }
+    
+    .sachovnice {
+        margin-top: 40px;
+        width: 100%;
+        min-height: 100px;
+        background-image: url(img/pozadi1.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
+    }
+    
+    
+    
+    
+    
+    .row {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        position: relative;
+    }
+    
+    .cell-text-left {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-left: 0px;
+    }
+    
+    .cell-text-right {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .cell-obrazek {
+        width: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .obrazek-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .obrazek-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    .obsah2 { 
+        width: 60%;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    
+    .obsah3 { 
+        width: 60%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    
+    .obsah2 a, .obsah3 a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Poppins;
+        color: var(--secondary);
+        border-bottom: 2px solid black;
+    }
+    
+    .obsah2 a:hover, .obsah3 a:hover {
+        color: var(--primary);
+    }
+    
+    .sachovnice h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+    
+    .sachovnice p {
+        font-family: Poppins;
+        font-size: 20px;
+        color: var(--text-color);
+        line-height: 1.2;
+    }
+    
+    .otazka {
+        height: 120px;
+        width: 100%;
+        background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+    }
+    
+    .text1 {
+        text-align: center;
+        background-color: 0;
+    }
+    
+    .text1 p {
+        color: var(--background);
+        font-size: 30px;
+    }
+    
+    .tlacitko {
+        text-align: center;
+        background-color: 0;
+    }
+    
+    .tlacitko a {
+        text-decoration: none;
+        text-transform: none;
+        color: var(--background);
+        font-size: 20px;
+        font-family: Poppins;
+        padding: 10px 20px;
+        background-color: var(--secondary);
+        border: 1px solid black;
+    }
+    
+    .tlacitko a:hover {
+        color: var(--primary);
+        background-color: var(--background);
+        transition: 0.5s;
+        border: 1px solid white;
+    }
+    
+    
+    .blog {
+        width: 100%;
+        background-color: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .nadpis3 {
+        text-align: center;
+    }
+    
+    .blog h2 {
+        font-size: 42px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--primary);
+    }
+    
+    .clanky {
+        width: 90%;
+        background-color: 0;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+    }
+    
+    .clanek {
+        width: 240px;
+        height: 500px;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-container-blog {
+        background-color: 0;
+        width: 100%;
+        height: 35%;
+    }
+    
+    .img-container-blog img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .nadpis-blog {
+        background-color: 0;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+    }
+    
+    .nadpis-blog h3 {
+        margin-left: 0px;
+        font-size: 30px;
+        color: var(--primary);
+    }
+    
+    .obsah-blog {
+        background-color: 0;
+        height: 40%;
+        width: 100%;
+    }
+    
+    .obsah-blog p {
+        font-family: Poppins;
+        color: var(--text-color);
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    
+    .citat {
+        width: 100%;
+        height: 500px;
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+    }
+    
+    
+    .citat-nadpis {
+        background-color: 0;
+    }
+    
+    .citat-nadpis h2 {
+        font-size: 42px;
+        color: var(--background);
+        font-style: italic;
+    }
+    
+    .citat-obsah {
+        background-color: 0;
+        text-align: center;
+        width: 60%;
+        min-width: 800px;
+    }
+    
+    .citat-obsah p {
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--background);
+        font-size: 25px;
+        font-style: italic;
+    }
+    
+    .citat-odkaz {
+        background-color: 0;
+    }
+    
+    .citat-odkaz a {
+        color: var(--background);
+        font-size: 25px;
+        text-decoration: none;
+        text-transform: none;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    
+    .reference {
+        background-color: 0;
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .zakaznici {
+        width: 60%;
+        min-width: 800px;
+        background-color: 0;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .zakaznici-nadpis h2 {
+        font-size: 42px;
+        color: var(--primary);
+        margin-bottom: 40px;
+    }
+    
+    
+    
+    .slider {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+        background-color: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .slide p {
+        font-size: 20px;
+        font-family: Poppins;
+    }
+    
+    .profile {
+        width: 100px;
+        height: 100px;
+        background-color: 0;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    
+    .profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .jmeno {
+        margin-bottom: 10px;
+        font-weight: 800;
+    }
+    
+    .shrnuti {
+        font-weight: 800;
+    }
+    
+    .recenze {
+        width: 500px;
+        line-height: 1.2;
+    }
+    
+    
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        color: black;
+        font-size: 30px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .prev { left: 10px; }
+    .next { right: 10px; }
+    
+    .dots {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        background: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .dot.active {
+        background: black;
+    }
+    
+    .formular {
+        width: 60%;
+        height: 500px;
+        margin-top: 40px;
+        min-width: 800px;
+        background-color: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .formular-nadpis {
+        background-color: 0;
+        margin-bottom: 40px;
+    }
+    
+    .formular-nadpis h2 {
+        font-size: 42px;
+        color: var(--primary);
+        margin-top: 40px;
+    }
+    
+    .form {
+        background-color: 0;
+        width: 750px;
+        height: 80%;
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .container a {
+        text-decoration: none;
+        color: var(--primary);
+    }
+    
+    .container {
+        font-family: Poppins;
+        font-size: 16px;
+    }
+    
+    
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+      
+
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+      
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
+      
+
+    .container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+      
+    .container input:checked ~ .checkmark {
+        background-color: var(--primary);
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+      
+
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+      
+    .container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    
+
+    .contact-inputs {
+        width: 90%;
+        height: 30px;
+        border: 1px solid black;
+        outline: none;
+        padding: 5px 10px;
+        font-family: Poppins;
+    }
+    
+    .contact-inputs:focus {
+        border: 1px solid var(--primary);
+    }
+    
+    .contact textarea {
+        height: 120px;
+        resize: none;
+    }
+    
+    .contact button {
+        width: 200px;
+        height: 40px;
+        font-family: Poppins;
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border: 1px solid black;
+    }
+    
+    .contact button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid var(--primary);
+        transition: 0.5s;
+    }
+    
+    
+    .otazky {
+        width: 100%;
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .otazky-nadpis {
+        margin-top: 40px;
+    }
+    
+    .otazky-nadpis h2 {
+        color: var(--background);
+        font-size: 42px;
+    }
+    
+    .qa-section {
+        width: 100%;
+    }
+    
+    
+    
+    .qa-question {
+        background: var(--primary);
+        padding: 15px;
+        text-align: left;
+        border: none;
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        font-family: Poppins;
+        padding-left: 30px;
+        width: 100%;
+    }
+    
+    .qa-answer {
+        display: none;
+        padding: 5px 0px;
+        background: rgb(156, 108, 46);
+        color: white;
+        font-family: Poppins;
+        padding-left: 30px;
+    }
+    
+    .arrow {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .qa-item.active .arrow {
+        transform: rotate(90deg);
+    }
+    
+    footer {
+        height: 20px;
+        width: 100%;
+        background-color: black;
+        color: rgb(116, 116, 116);
+        font-family: Poppins;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .kontakt {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 400px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informace {
+        width: 30%;
+        min-width: 400px;
+        height: 80%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 10%;
+        font-family: Poppins;
+    }
+
+    .footer-nadpis {
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    .informace a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .informace a:hover {
+        color: var(--primary);
+    }
+
+    .menu-info {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .kontakt-info {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .footer-divs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-divs img {
+        width: 24px;
+    }
+
+    .mapa {
+        width: 30%;
+        height: 80%;
+        min-width: 400px;
+    }
+    
+    .mapa2 {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+@media (max-width: 949px){
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .vrch {
+        display: none;
+    }
+
+    .container-uvod {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .pozadi {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("img/pozadi3.1.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        z-index: -1;
+    }
+
+    .vrch2 {
+        display: none;
+    }
+    
+    .nav {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        position: relative;
+    }
+    
+    .vrch2 {
+        background-color: var(--primary);
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 40px;
+        padding-right: 40px;
+        color: white;
+        font-family: Poppins;
+    }
+
+    .spod2 {
+        display: none;
+    }
+    
+    .spod {
+        position: absolute;
+        right: 0;
+        display: none; /* přepinaci menu */
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        padding-top: 100px;
+        padding-right: 40px;
+        gap: 10px;
+        background-color: rgb(156, 108, 46);
+        width: 100%;
+        z-index: 15;
+        padding-bottom: 20px;
+    }
+
+    .carky {
+        position: absolute;
+        top: 40px;
+        z-index: 1100;
+        right: 40px;
+        cursor: pointer;
+    }
+
+    .krizek {
+        position: absolute;
+        top: 40px;
+        z-index: 1100;
+        right: 40px;
+        cursor: pointer;
+    }
+    
+    .vrch p {
+        font-family: Poppins;
+        color: var(--background);
+        margin-right: 40px;
+    }
+    
+    .spod a {
+        color: var(--background);
+        text-decoration: none;
+        text-transform: none;
+        font-family: Poppins;
+    }
+    
+    .spod a:hover {
+        color: var(--secondary);
+    }
+    
+    .soc {
+        display: none;
+    }
+
+    
+
+    
+ /*  zacatek uvodu*/
+    
+    .container-nadpis {
+        position: absolute;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        background-color: re;
+        gap: 50px;
+        z-index: 1;
+    }
+    
+    .nadpis {
+        background-color: 0;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .nadpis h1 {
+        font-family: Poppins;
+        font-size: 40px;
+        line-height: 1.2;
+        color: var(--background);
+    }
+    
+    .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slogan a {
+        font-size: 20px;
+        color: var(--background);
+        background-color: var(--primary);
+        border: 2px solid var(--primary);
+        padding: 5px 20px;
+        text-decoration: none;
+        text-transform: none;
+        font-family: Poppins;
+        cursor: pointer;
+    }
+
+    .slogan a:hover {
+        color: var(--primary);
+        background-color: var(--background);
+        border: 2px solid var(--primary);
+        transition: 0.5s;
+    }
+    
+    .slogan2-1 {
+        background-color: var(--primary);
+        padding: 10px 20px;
+        text-align: center;
+        width: 80%;
+        margin-top: 100px;
+    }
+    
+    .slogan2-1 p {
+        color: var(--background);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 32px;
+    }
+
+    .slogan2 {
+        display: none;
+    }
+    
+    /* konec uvodu */
+    .kdo-jsme {
+        position: relative;
+        width: 100%;
+        background-color: aqu;
+        padding-top: 40px;
+    }
+    
+    .obsah {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: 0;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .obsah h2 {
+        font-size: 42px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--primary);
+    }
+    
+    .obsah p {
+        font-family: Poppins;
+        font-size: 20px;
+        color: var(--text-color);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .container-line {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    /* začátek šachovnice */
+    
+    .co-umime{
+        position: relative;
+        padding-top: 40px;
+    }
+    
+    .nadpis2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .co-umime h2 {
+        font-size: 42px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--primary);
+    }
+    
+    .sachovnice {
+        margin-top: 40px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
+        overflow: hidden;
+        display: none;
+    }
+    
+    .sachovnice-2{
+        width: 100%;
+        background-image: url(img/pozadi1.webp);
+        background-image: url(img/pozadi1.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
+    }
+
+    .sluzba {
+        width: 100%;
+        display: block;
+    }
+
+    .bunka-1 {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .bunka-2 {
+        width: 100%;
+        height: 300px;
+        background-color: 0;
+    }
+
+
+    .ob {
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+
+    .bunka-1 a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Poppins;
+        color: var(--secondary);
+        border-bottom: 2px solid black;
+    }
+
+    .bunka-1 a:hover {
+        color: var(--primary);
+    }
+
+    .sachovnice-2 h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+
+    .sachovnice-2 p {
+        font-family: Poppins;
+        font-size: 20px;
+        color: var(--text-color);
+        line-height: 1.2;
+    }
+
+    .bunka-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    
+ 
+    /*  konec sachovnice  */
+    
+    .otazka {
+        width: 100%;
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        gap: 30px;
+    }
+    
+    .text1 {
+        text-align: center;
+        background-color: 0;
+        min-width: 200px;
+    }
+    
+    .text1 p {
+        color: var(--background);
+        font-size: 30px;
+    }
+    
+    .tlacitko {
+        text-align: center;
+        background-color: 0;
+        min-width: 200px;
+    }
+    
+    .tlacitko a {
+        text-decoration: none;
+        text-transform: none;
+        color: var(--background);
+        font-size: 20px;
+        font-family: Poppins;
+        padding: 10px 20px;
+        background-color: var(--secondary);
+        border: 1px solid black;
+    }
+    
+    .tlacitko a:hover {
+        color: var(--primary);
+        background-color: var(--background);
+        transition: 0.5s;
+        border: 1px solid white;
+    }
+
+    /* začátek blogu */
+    
+    @media (max-width: 720px) {
+        .blog {
+            background-color: 0;
+        }
+
+        .clanky {
+            background-color: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+    
+    .blog {
+        width: 100%;
+        background-color: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .nadpis3 {
+        text-align: center;
+    }
+    
+    .blog h2 {
+        font-size: 42px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--primary);
+    }
+    
+    .clanky {
+        width: 90%;
+        background-color: 0;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+    }
+    
+    .clanek {
+        width: 240px;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .img-container-blog {
+        background-color: 0;
+        width: 100%;
+        height: 35%;
+    }
+    
+    .img-container-blog img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .nadpis-blog {
+        background-color: 0;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+    }
+    
+    .nadpis-blog h3 {
+        margin-left: 0px;
+        font-size: 30px;
+        color: var(--primary);
+    }
+    
+    .obsah-blog {
+        background-color: 0;
+        height: 40%;
+        width: 100%;
+    }
+    
+    .obsah-blog p {
+        font-family: Poppins;
+        color: var(--text-color);
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+
+    /* konec blogu */
+    /* začátek citátu */
+    .citat {
+        width: 100%;
+        height: 500px;
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    
+    .citat-nadpis {
+        background-color: 0;
+        text-align: center;
+        width: 90%;
+    }
+    
+    .citat-nadpis h2 {
+        font-size: 42px;
+        color: var(--background);
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .citat-obsah {
+        background-color: 0;
+        text-align: center;
+        width: 80%;
+        max-width: 800px;
+    }
+    
+    .citat-obsah p {
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--background);
+        font-size: 25px;
+        font-style: italic;
+    }
+    
+    .citat-odkaz {
+        background-color: 0;
+    }
+    
+    .citat-odkaz a {
+        color: var(--background);
+        font-size: 25px;
+        text-decoration: none;
+        text-transform: none;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+
+        /* konec citátu */
+    
+    .reference {  
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .zakaznici {
+        width: 100%;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .zakaznici-nadpis h2 {
+        font-size: 42px;
+        color: var(--primary);
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    
+    
+    .slider {
+        position: relative;
+        margin: auto;
+        width: 90%;
+        overflow: hidden;
+        background-color: 0;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+        background-color: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .slide p {
+        font-size: 20px;
+        font-family: Poppins;
+    }
+    
+    .profile {
+        width: 100px;
+        height: 100px;
+        background-color: 0;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    
+    .profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .jmeno {
+        margin-bottom: 10px;
+        font-weight: 800;
+    }
+    
+    .shrnuti {
+        font-weight: 800;
+        width: 80%;
+        
+    }
+    
+    .recenze {
+        width: 80%;
+        max-width: 500px;
+        line-height: 1.2;
+        background-color: 0;
+    }
+    
+    
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        color: black;
+        font-size: 30px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .prev { left: 0px; }
+    .next { right: 0px; }
+    
+    .dots {
+        text-align: center;
+    }
+    
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        background: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .dot.active {
+        background: black;
+    }
+
+
+
+    /* začátek formuláře */
+    
+    .formular {
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+        background-color: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .formular-nadpis {
+        background-color: 0;
+        margin-bottom: 40px;
+    }
+    
+    .formular-nadpis h2 {
+        font-size: 42px;
+        color: var(--primary);
+        margin-top: 40px;
+    }
+
+
+    @media (max-width: 740px) {
+        .form {
+            width: 90%;
+        }
+
+        .contact {
+            width: 90%;
+        }
+    }
+
+    
+    .form {
+        background-color: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 750px;
+    }
+    
+    .container a {
+        text-decoration: none;
+        color: var(--primary);
+    }
+    
+    .container {
+        font-family: Poppins;
+        font-size: 16px;
+    }
+
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+      
+
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+      
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
+      
+
+    .container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+      
+    .container input:checked ~ .checkmark {
+        background-color: var(--primary);
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+      
+
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+      
+    .container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    
+
+    .contact-inputs {
+        width: 90%;
+        height: 30px;
+        border: 1px solid black;
+        outline: none;
+        padding: 5px 10px;
+        font-family: Poppins;
+    }
+    
+    .contact-inputs:focus {
+        border: 1px solid var(--primary);
+    }
+    
+    .contact textarea {
+        height: 120px;
+        resize: none;
+    }
+    
+    .contact button {
+        width: 200px;
+        height: 40px;
+        font-family: Poppins;
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border: 1px solid black;
+    }
+    
+    .contact button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid var(--primary);
+        transition: 0.5s;
+    }
+    
+        /* konec formuláře */
+    
+    .otazky {
+        width: 100%;
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .otazky-nadpis {
+        margin-top: 40px;
+    }
+    
+    .otazky-nadpis h2 {
+        color: var(--background);
+        font-size: 42px;
+    }
+    
+    .qa-section {
+        width: 100%;
+    }
+    
+    
+    
+    .qa-question {
+        background: var(--primary);
+        padding: 15px;
+        text-align: left;
+        border: none;
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        font-family: Poppins;
+        padding-left: 30px;
+        width: 100%;
+    }
+    
+    .qa-answer {
+        display: none;
+        padding: 5px 0px;
+        background: rgb(156, 108, 46);
+        color: white;
+        font-family: Poppins;
+        padding-left: 30px;
+    }
+    
+    .arrow {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .qa-item.active .arrow {
+        transform: rotate(90deg);
+    }
+    
+    footer {
+        height: 20px;
+        width: 100%;
+        background-color: black;
+        color: rgb(116, 116, 116);
+        font-family: Poppins;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .kontakt {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        min-height: 400px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 890px) {
+        .kontakt {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }
+
+    .informace {
+        width: 30%;
+        min-width: 400px;
+        height: 320px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 10%;
+        font-family: Poppins;
+        background-color: 0;
+    }
+
+    .footer-nadpis {
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    .informace a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .informace a:hover {
+        color: var(--primary);
+    }
+
+    .menu-info {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .kontakt-info {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .footer-divs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-divs img {
+        width: 24px;
+    }
+
+    .mapa {
+        width: 30%;
+        height: 320px;
+        min-width: 400px;
+        background-color: 0;
+    }
+    
+    .mapa2 {
+        width: 100%;
+        height: 100%;
+    }
+}
+

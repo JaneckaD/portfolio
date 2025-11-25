@@ -1,0 +1,982 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+
+
+@media (max-width: 800px) and (min-width: 320px){
+
+    .menu2 {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        height: 40px;
+        background: orang;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        position: absolute;
+        z-index: 5;
+        margin-top: 10px;
+    }
+
+
+    .menu.open {
+        display: flex; /* Menu se zobrazí, pokud má třídu "open" */
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.26); /* Průhledná bílá barva */
+        backdrop-filter: blur(20px); /* Efekt rozmazání */
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+
+        height: 100%;
+        overflow: hidden; /* Zakáže scrollování */
+        display: none;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        padding: 40px 0;
+        margin-top: 0; /* Odstranění výchozího odsazení */
+        text-align: center
+    }
+
+    .menu ul li {
+        margin: 10px 0; /* Mezera mezi jednotlivými položkami */
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    .menu ul li a:hover {
+        border-bottom: solid px rgb(151, 69, 1);
+    }
+
+    .logo-container {
+        background-color: 0;
+        width: 30%;
+        height: 40px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 10px;
+    }
+
+    .logo {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .bars-container {
+        background-color: 0;
+        width: 30%;
+        height: 40px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    .bars {
+        width: 25px;
+        color: white;
+        font-size: x-large;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+
+
+
+    .bars-container {
+        background-color: 0;
+        width: 30%;
+        height: 40px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    .bars {
+        width: 25px;
+        color: white;
+        font-size: x-large;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #menuButton {
+        display: flex;
+    }
+
+    #menuCloseButton {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    .container {
+        max-height: 80vh;
+        max-height: 300px;
+        width: 100%;
+        background: none;
+        min-height: 30vh;
+        top: 0;
+
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    
+    .container .upoutavka {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+    
+    .banner-fullhd {
+        display: none;
+    }
+
+    .banner-max-500px {
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+
+    .upoutavka {
+        position: absolute;
+        background-color: none;
+        width: 80%;
+        margin-top: 10vw;
+        z-index: 2;
+    }
+
+    
+
+    .upoutavka h2 {
+        color: white;
+        font-size: 2em;
+        
+    }
+
+    .upoutavka p {
+        color: white;
+        font-size: 1em;
+    }
+    
+    .upoutavka a {
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        background: rgb(151, 69, 1);
+        padding: 4px 20px;
+        display: inline-block;
+        margin-top: 10px;
+        transition: background 0.3s;
+        font-weight: bold;
+    }
+
+    .upoutavka a:hover {
+        background: white;
+        color: rgb(151, 69, 1);
+        box-shadow: 0 0 10px black;
+    }
+
+    .upoutavka img {
+        width: 3em;
+        margin-bottom: 20px;
+    }
+
+
+    .wrapper {
+        background-color: 0;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    .slogany1 {
+        text-align: center;
+    }
+
+    .slogany1 h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+    }
+
+    .lidi-tymu {
+        text-align: center;
+        margin-top: 20px;
+        background: blu;
+    }
+    
+    .text-nazev {
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .text-jmeno {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .lidi-tymu img {
+        width: 100%;
+    }
+
+    .karta-barber {
+        width: 70vw;
+        min-width: 320px;
+        height: 700px;
+        background: white;
+        margin: auto;
+        box-shadow: 0 0 10px black;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+    .text-karta {
+        margin: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    .text-odkaz{
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .prechod {
+        width: 100%;
+        height: 20px;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0; /* Odstup od ostatního obsahu */
+    }
+
+    .prechod2 {
+        width: 100%;
+        height: 20px;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px; /* Odstup od ostatního obsahu */
+        margin-top: 40px;
+    }
+    
+    .cara-predni,
+    .cara-zadni {
+        flex-grow: 1; /* Čáry se přizpůsobí dostupné šířce */
+        height: 2px; /* Tloušťka čáry */
+        height: 0; /* Nastavíme výšku na 0, protože budeme používat border */
+        border-top: 2px dashed rgb(151, 69, 1); /* Přerušovaná čára */
+    }
+    
+    .ikona-stred {
+        width: 25px; /* Velikost kruhu */
+        height: 25px;
+        border-radius: 50%; /* Udělá z divu kruh */
+        background-color: none; /* Barva kruhu (změňte podle potřeby) */
+        margin: 0 10px; /* Vzdálenost kruhu od čar */
+    }
+
+    .cenik {
+        background: re;
+        width: 100%;
+        height: 520px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    
+    .cenik h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+    }
+
+    .sluzby {
+        background: gree;
+        display: flex;
+        flex-direction: column; /* Každá položka bude pod sebou */
+        gap: 10px; /* Rozestup mezi položkami */
+        padding: 10px;
+    }
+    
+    .polozka {
+        display: flex;
+        align-items: center; /* Vertikální zarovnání na střed */
+        gap: 10px; /* Mezera mezi texty a čárkou */
+    }
+    
+    .tecky {
+        flex-grow: 1; /* Tečky se roztáhnou mezi "vlasy" a "cena" */
+        border-bottom: 2px dotted black; /* Vytvoření tečkované čáry */
+        height: 0; /* Vypneme výšku, abychom viděli pouze čáru */
+        margin-top: 2%;
+    }
+    
+    .sluzby p {
+        font-weight: bold;
+    }
+
+    .text-cenik {
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .cenik a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        background: rgb(151, 69, 1);
+        padding: 4px 10px;
+        width: 300px;
+        text-align: center;
+        margin: 40px auto;
+        transition: background 0.3s;
+        font-weight: bold;
+    }
+
+    .cenik a:hover {
+        background: white;
+        color: rgb(151, 69, 1);
+        box-shadow: 0 0 10px black;
+    }
+
+    .kontakt {
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        background: 0;
+    }
+
+    .kontakt h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+    }
+
+    .oteviraci-doba {
+        background: 0;
+        width: 100%;
+        height: 80px;
+    }
+
+    .text-doba {
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .oteviraci-doba p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .socialni-site {
+        background: 0;
+        height: 160px;
+    }
+
+    .socialni-site a, 
+    .socialni-site p {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        display: flex; /* Aktivuje Flexbox pro zarovnání ikony a textu */
+        align-items: center; /* Zarovná ikonu a text vertikálně na střed */
+        gap: 5px; /* Mezera mezi ikonou a textem */
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .socialni-site img {
+        width: 24px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 400px;
+        border: none;
+        margin-bottom: 200px;
+    }
+
+    .text-mapa {
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        width: 100%;
+        min-height: 450px;
+        background: black;
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-bottom: 0px;
+        margin-top: 200px;
+    }
+
+    footer img {
+        width: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .podtrhnute {
+        font-size: 20px;
+        text-decoration: underline;
+        margin: 20px 0;
+    }
+
+    .soc img {
+        width: 24px;
+        margin: 0px 0;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 1920px) and (min-width: 801px){
+    body {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+
+    
+    
+
+    .container {
+        background: 0;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-container {
+        background: 0;
+        z-index: 11;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        height: 80%;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    nav {
+        background: 0;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu2 {
+        background: 0;
+        margin-right: 40px;
+        width: 65%;
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .menu2 ul {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 60px;
+        list-style-type: none;
+    }
+
+    .menu2 ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .bars-container {
+        display: none;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+    }
+
+    .banner-fullhd {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    .banner-max-500px {
+        display: none;
+    }
+
+    .upoutavka {
+        position: absolute;
+        margin: 50%;
+        transform: translate(-50%, -150%);
+        text-align: center;
+        padding: 0px;
+        position: absolute;
+        background-color: none;
+        width: 100%;
+        z-index: 10;
+        margin-top: 0;
+    }
+    
+
+    .upoutavka h2 {
+        color: white;
+        font-size: 2em;
+        
+    }
+
+    .upoutavka p {
+        color: white;
+        font-size: 1em;
+    }
+    
+    .upoutavka a {
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        background: rgb(151, 69, 1);
+        padding: 4px 20px;
+        display: inline-block;
+        margin-top: 10px;
+        transition: background 0.3s;
+        font-weight: bold;
+    }
+
+    .upoutavka a:hover {
+        background: white;
+        color: rgb(151, 69, 1);
+        box-shadow: 0 0 10px black;
+    }
+
+    .upoutavka img {
+        width: 3em;
+    }
+
+
+    .wrapper {
+        background-color: 0;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    .slogany1 {
+        text-align: center;
+    }
+
+    .slogany1 h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+    }
+
+    .lidi-tymu {
+        text-align: center;
+        margin-top: 20px;
+        background: 0;
+    }
+    
+    .text-nazev {
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .barbers {
+        background: 0;
+        width: 100%;
+        height: 110%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .text-jmeno {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .lidi-tymu img {
+        width: 100%;
+    }
+
+    .karta-barber {
+        height: 100%;
+        width: 100%;
+        background: white;
+        margin: auto;
+        box-shadow: 0 0 10px black;
+        padding-bottom: 10px;
+    }
+
+    .text-karta {
+        margin: 0 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+
+
+    .text-odkaz{
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .prechod {
+        width: 100%;
+        height: 20px;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0; /* Odstup od ostatního obsahu */
+        background: 0;
+    }
+
+    .prechod2 {
+        width: 100%;
+        height: 20px;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px; /* Odstup od ostatního obsahu */
+        margin-top: 0px;
+        background: 0;
+    }
+    
+    .cara-predni,
+    .cara-zadni {
+        flex-grow: 1; /* Čáry se přizpůsobí dostupné šířce */
+        height: 2px; /* Tloušťka čáry */
+        height: 0; /* Nastavíme výšku na 0, protože budeme používat border */
+        border-top: 2px dashed rgb(151, 69, 1); /* Přerušovaná čára */
+    }
+    
+    .ikona-stred {
+        width: 25px; /* Velikost kruhu */
+        height: 25px;
+        border-radius: 50%; /* Udělá z divu kruh */
+        background-color: none; /* Barva kruhu (změňte podle potřeby) */
+        margin: 0 10px; /* Vzdálenost kruhu od čar */
+    }
+
+    .cenik {
+        background: 0;
+        width: 80%;
+        height: 560px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+    }
+    
+    .cenik h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+    }
+
+    .sluzby {
+        background: 0;
+        display: flex;
+        flex-direction: column; /* Každá položka bude pod sebou */
+        gap: 10px; /* Rozestup mezi položkami */
+        padding: 0px;
+        min-width: 100%;
+        height: 80%;
+        position: absolute;
+        margin-top: 80px;
+    }
+    
+    .polozka {
+        display: flex;
+        align-items: center; /* Vertikální zarovnání na střed */
+        gap: 10px; /* Mezera mezi texty a čárkou */
+    }
+    
+    .tecky {
+        flex-grow: 1; /* Tečky se roztáhnou mezi "vlasy" a "cena" */
+        border-bottom: 2px dotted black; /* Vytvoření tečkované čáry */
+        height: 0; /* Vypneme výšku, abychom viděli pouze čáru */
+        margin-top: 2%;
+    }
+    
+    .sluzby p {
+        font-weight: bold;
+    }
+
+    .text-cenik {
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+    }
+
+    .cenik a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        background: rgb(151, 69, 1);
+        padding: 4px 10px;
+        width: 300px;
+        text-align: center;
+        margin: 20px auto;
+        transition: background 0.3s;
+        font-weight: bold;
+    }
+
+    .cenik a:hover {
+        background: white;
+        color: rgb(151, 69, 1);
+        box-shadow: 0 0 10px black;
+    }
+
+    .kontakt {
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        background: 0;
+    }
+
+    .kontakt h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+    }
+
+    .oteviraci-doba {
+        background: 0;
+        width: 100%;
+        height: 80px;
+    }
+
+    .text-doba {
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .oteviraci-doba p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .socialni-site {
+        background: 0;
+        height: 160px;
+    }
+
+    .socialni-site a, 
+    .socialni-site p {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        display: flex; /* Aktivuje Flexbox pro zarovnání ikony a textu */
+        align-items: center; /* Zarovná ikonu a text vertikálně na střed */
+        gap: 5px; /* Mezera mezi ikonou a textem */
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .socialni-site img {
+        width: 24px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 400px;
+        border: none;
+        margin-bottom: 200px;
+    }
+
+    .text-mapa {
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline 4px rgb(151, 69, 1);
+        text-underline-offset: 10px;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        width: 100%;
+        min-height: 450px;
+        background: black;
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-bottom: 0px;
+        margin-top: 200px;
+    }
+
+    footer img {
+        width: 20%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .podtrhnute {
+        font-size: 20px;
+        text-decoration: underline;
+        margin: 20px 0;
+    }
+
+    .soc img {
+        width: 24px;
+        margin: 0px 0;
+        margin-bottom: 20px;
+    }
+}
