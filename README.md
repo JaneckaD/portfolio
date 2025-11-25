@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="karta">
-        <h2>barber shop</h2>
+        <h2>barber sho</h2>
         <p>popis</p>
         <a href="">otevřít</a>
     </div>
