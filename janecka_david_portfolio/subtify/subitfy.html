@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link id="darkmodeStyle" rel="stylesheet" href="darkmode.css"> -->
+     <script src="https://kit.fontawesome.com/de0d24114f.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Subtify | Vaše správa předplatného </title>
+      <link rel="icon" href="/obrazky/subtify_title.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="loader"></div>
+     <p>🚀 Spouštím Subtify engine…</p>
+  </div>
+
+
+
+        <!-- pnavigace -->
+        <nav>
+            <div class="navContainer">
+                <div class="levaStrana">
+                    <h1 data-aos="fade-right" data-aos-duration="2000">Sub</h1>
+                    <h1 class="blue" data-aos="fade-left" data-aos-duration="2000">Tify</h1>
+                </div>
+                <div class="pravaStrana">
+                    <button><img src="obrazky/device-theme.png" alt="Přepínání režimů" id="theme-icon"></button>
+                    <div class="radekSekce">
+                        <img src="obrazky/change.png" alt="peníz" id="mena-icon">
+                        <select id="mena" name="měna" size="1">
+                            <option value="czk">CZK</option>
+                            <option value="eur">EUR</option>
+                            <option value="usd">USD</option>
+                        </select>
+                    </div>
+                    <div class="radekSekce">
+                        <img src="obrazky/language.png" alt="jazyk" id="jazyk-icon">
+                        <select id="jazyk" name="jazyk" size="1">
+                            <option value="cz">CZ</option>
+                            <option value="en">EN</option>
+                            <option value="de">DE</option>
+                        </select>
+                    </div>
+
+
+                        
+                </div>
+            </div>
+        </nav>
+
+    <!-- rámeček pro obsah -->
+    <div class="wrap">
+        <div class="filtrace">
+            <button id="abeceda"><img src="obrazky/az.png" alt="abeceda" id="abeceda-icon"></button>
+            <button id="datum"><img src="obrazky/hourglass.png" alt="datum" id="datum-icon"></button>
+            <button id="castka"><img src="obrazky/piggy-bank.png" alt="částka" id="castka-icon" class="castka-icon"></button>
+
+            <input type="text" id="hledacek" placeholder="Vyhledat předplatné..." data-aos="slide-down" data-aos-duration="2250">
+        </div>
+
+        <!-- rámeček pro karty -->
+        <div id="karty">
+            <!-- prostor pro karty -->
+
+
+
+            
+            <!-- plus karta ktera zustane tady aby byla furt na konco, karty davej nad to -->
+            <div class="kartaPlus" id="kartaPlus" data-aos="zoom-in" data-aos-duration="3000">
+                <button id="plusButton"><img src="obrazky/plus.png" id="plus" alt="Přidání karty"></button>
+            </div>
+
+            <!-- kdyz klikne na "kartaPlus" tak zmizi a zobrazi se "pridaniKarty" -->
+
+            <!-- menu pro přidání -->
+            <div class="pridaniKarty" id="pridaniKarty">
+                <input type="text" placeholder="Zadejte název" class="inputNazev" id="nazevInput" required>
+                <div class="InputBg"></div>
+                <select id="vyberObrazku" name="vyberObrazku" size="1" class="InputImg" required>
+                    <option value="obrazky/nobg.png">Bez loga</option>
+                    <option value="obrazky/spotify_logo.png">Spotify</option>
+                    <option value="obrazky/yt.png">Youtube</option>
+                    <option value="obrazky/netflix.png">Netflix</option>
+                    <option value="obrazky/snap.png">Snapchat</option>
+                    <option value="obrazky/meta.jpg">Meta</option>
+
+                    <option value="obrazky/chatgpt.png">Chat GPT</option>
+                    <option value="obrazky/hbo.png">HBO</option>
+                    <option value="obrazky/office.jpeg">Office</option>
+                    <option value="obrazky/foodora.png">Foodora</option>
+                    <option value="obrazky/gemini.png">Gemini</option>
+                    <option value="obrazky/duolingo.jpg">Duolingo</option>
+                    <option value="obrazky/livesport.jpeg">Livesport</option>
+                    <option value="obrazky/operator.png">Operátor</option>
+                    <option value="obrazky/apple.png">Apple TV+</option>
+                    <option value="obrazky/appleM.png">Apple Music</option>
+
+
+                </select>
+                <input type="number" placeholder="Zadejte částku v czk" class="inputCastka" id="castkaInput" required>
+                <input type="date" placeholder="Zadejte datum další splátky" class="inputDatum" id="dateInput" required>
+                <button class="inputSend" id="pridat" onclick="vytvoreniKarty()" type="submit">Přidat</button>
+            </div>
+        </div>
+
+             
+
+    </div>
+            <footer class="minimal-footer" data-aos="slide-up" data-aos-duration="2500"   data-aos-once="true">
+            <div class="footer-top-section" data-aos="slide-up" data-aos-duration="2600"   data-aos-once="true">
+                <div class="footer-logo-area">
+                    <div class="logo">
+                        <h1>Sub<span>Tify</span></h1>
+                    </div>
+                    <div class="footerText">
+                        <p>Chytrá správa všech vašich předplatných na jednom místě.<br>Udržujte přehled, šetřete peníze a mějte kontrolu nad svými výdaji.</p>
+                    </div>
+                </div>
+
+            <div class="footer-bottom-section">
+                <p class="copyright-text">Copyright © 2025. Made By <span class="jmena">D. Zedek & D. Vavrečka & D. Janečka & D. Svoboda</span></p>
+            </div>
+        </footer>  
+
+
+
+ 
+
+
+<script>
+// PRELOADER
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+
+
+  setTimeout(() => {
+    preloader.classList.add('hide');
+
+    // cas pro spusteni AOS
+    setTimeout(() => {
+      AOS.init({
+       
+      });
+    }, 2500); 
+
+  }, 900);
+});
+
+
+</script>
+
+      <script src="script.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --white-primary: white;
+    --white-secondary: black;
+    --white-third: white;
+    --white-fourth: black;
+}
+
+/* barvby pro testovani prvku*/
+.dvojice {
+    background-color: 0;
+}
+
+
+
+
+/* konec testovani */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    background-color: var(--white-primary);
+    height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    background-color: var(--white-third);
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.26);
+    z-index: 5;
+}
+
+.levaStrana {
+    color: var(--white-secondary);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+}
+
+.blue {
+    color: #4781EB;
+}
+
+.pravaStrana {
+    color: var(--white-secondary);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 32px;
+}
+
+button {
+    border: none;
+    color: none;
+    cursor: pointer;
+    background: none;
+}
+
+.filtrace {
+    max-width: 1000px;
+}
+
+#karty {
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+
+.wrap {
+    background-color: 0;
+    width: 1000px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.filtrace {
+    background-color: 0;
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#filtr {
+    margin-right: 20px;
+}
+
+#hledacek {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-secondary);
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    background-color: var(--white-third);
+}
+
+#hledacek::placeholder {
+    color: var(--white-secondary);
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+#hledacek:focus {
+    border: none;
+    color: var(--white-secondary);
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+.hledani {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-primary);
+    background-color: var(--white-fourth);
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hledani img {
+    width: 20px;
+}
+
+#karty {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    background-color: 0;
+    width: 95%;
+    margin: auto;
+}
+
+
+.karta, .kartaExpirace {
+    width: 48%;
+    background-color: var(--white-third);
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    font-size: 22px;
+}
+
+.kartaPlus {
+    width: 48%;
+    background-color: var(--white-third);
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kartaPlus button {
+    width: 100%;
+    height: 100%;
+}
+
+.kartaPlus img {
+    width: 35px;
+}
+
+.kartaExpirace {
+    border: 3px solid red;
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+
+}
+
+.dvojice {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    width: 96%;
+}
+
+.dvojiceLeva {
+    background-color: 0;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.dvojicePrava {
+    background-color: 0;
+}
+
+.sekce  {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.kartaImgs {
+    width: 20px;
+    background-color: 0;
+}
+
+.del {
+    font-family: Poppins;
+    color: red;
+    font-weight: 500;
+    width: 20px;
+}
+
+.upravit {
+    font-family: Poppins;
+    font-weight: 500;
+    width: 20px;
+}
+
+.sekce button {
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.nazev.highlight {
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    color: red;
+}
+
+
+
+.nazev {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--white-secondary);
+}
+
+.kartaImg {
+    width: 30px;
+    height: 30px;
+}
+
+.datumExpirace {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: var(--white-secondary);
+}
+
+.castka {
+    margin-left: 10px;
+    color: var(--white-secondary);
+}
+
+.pridaniKarty {
+    width: 48%;
+    background-color: var(--white-third);
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    font-size: 22px;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputNazev {
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-secondary);
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-left: 10px;
+}
+
+.inputCastka {
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-secondary);
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-left: 10px;
+}
+
+.inputDatum {
+    width: 180px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-secondary);
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    border-radius: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+
+.inputImg {
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-secondary);
+    font-weight: 600;
+    font-family: Poppins;
+    border-radius: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+
+}
+
+.pridaniKarty select {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-secondary);
+    background-color: var(--white-primary);
+    font-weight: 600;
+    font-family: Poppins;
+    border-radius: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+}
+
+
+.inputNazev::placeholder, 
+.inputCastka::placeholder {
+    color: var(--white-secondary);
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+.inputNazev:focus,
+.inputCastka:focus {
+    border: none;
+    color: var(--white-secondary);
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+.inputSend {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: var(--white-primary);
+    background-color: var(--white-secondary);
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin: 0px 10px;
+}
+
+.pridaniKarty input {
+    background-color: var(--white-primary);
+}
+
+.oknoNastaveni {
+    background-color: var(--white-primary);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+    
+}
+
+.oknoNastaveni, .oknoFiltrovat, .oknoUpravit {
+    z-index: 100;
+    position: absolute;
+}
+
+.sekce {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+}
+
+.sekce label, p, button {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: var(--white-secondary);
+}
+
+nav select {
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: var(--white-secondary);
+    border: none;
+    cursor: pointer;
+    background-color: var(--white-primary);
+    outline: none;
+}
+
+.sekce option {
+    border: 0;
+}
+
+.sekce img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.radekSekce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.oknoUpravit {
+    background-color: var(--white-primary);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+}
+
+.oknoFiltrovat {
+    background-color: var(--white-primary);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+}
+
+
+/*FOOTER*/
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    position: relative;
+}
+
+.minimal-footer
+{
+    background-color: #4781EB;
+    margin-top: 200px;
+}
+
+.footer-logo-area
+{
+    text-align: center;
+}
+
+.footerNav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.footerNav ul li a
+{
+   text-decoration: none;
+   color:  var(--white-primary);
+}
+
+.footerNav ul li a:hover
+{
+    text-decoration:underline
+}
+
+
+.social-links 
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-links a i {
+    color:  var(--white-primary);
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.social-links a i:hover
+{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.social-links  a 
+{
+    text-decoration: none;
+}
+
+.footer-logo-area > .logo span
+{
+color: white;
+}
+
+.footer-bottom-section
+{
+    margin-top: 15px;
+    background-color: #1b3159;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom-section > .copyright-text
+{
+    color: white;
+    font-weight: 400;
+}
+
+.footerText p {
+    color: white;
+}
+
+
+/*  Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: /*#111*/ var(--white-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+
+.loader {
+  border: 4px solid #1b3057;
+  border-top: 4px solid #4781EB;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#preloader p {
+    color: #4781EB;
+    margin-top: 15px;
+    font-family: Poppins;
+  letter-spacing: 1px;
+}
+
+
+#preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* === RESPONZIVITA === */
+
+/* mozna poresit jeste button vyhledavani? -- hotovo */
+/* Celkove poresit buttony u responzivity telefonu */
+
+
+@media (max-width: 1024px) {
+
+    .wrap {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box; 
+    }
+
+    .navContainer {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+
+    .wrap {
+        padding-bottom: 150px; 
+    }
+}
+
+
+@media (max-width: 992px) {
+    /* karty pod sebe */
+    #karty {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+    }
+
+    .karta,
+    .kartaExpirace,
+    .kartaPlus,
+    .pridaniKarty {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .wrap, .navContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navContainer {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .levaStrana, .pravaStrana {
+        justify-content: center; 
+        width: 100%;
+    }
+    .pravaStrana {
+        flex-wrap: wrap; 
+        gap: 15px;
+        margin-top: 17px;
+    }
+
+
+    .filtrace {
+        flex-direction: column;
+        height: auto; 
+        gap: 15px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        align-items: stretch; /* Vetsina prvku se roztahne */
+    }
+
+
+    #filtr {
+        margin-right: 0;
+        align-self: flex-start;
+    }
+
+
+    #hledacek {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 0; 
+    }
+    
+
+    .hledani {
+        align-self: center; 
+        width: 100%;
+        max-width: 250px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+
+
+    }
+
+    .pridaniKarty {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 10px;
+        align-items: center;
+    }
+    .inputNazev,
+    .inputCastka,
+    .inputDatum,
+    .pridaniKarty select,
+    .inputSend {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    footer {
+        position: relative; /* melo by tam byt static, ale nefunguje to, takze jsem tam dal fixed*/
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .wrap {
+        padding-bottom: 20px; 
+    }
+
+
+    .footer-bottom-section {
+        height: auto;
+        padding: 15px 10px;
+    }
+    .footer-bottom-section .copyright-text {
+        font-size: 14px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .jmena {
+        display: block; 
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .levaStrana h1 {
+        font-size: 36px;
+    }
+
+    .nazev {
+        font-size: 24px; 
+    }
+    .karta, .kartaExpirace {
+        font-size: 18px; 
+        min-height: 130px; 
+        height: auto;
+    }
+
+    .datumExpirace, .castka {
+        font-size: 16px;
+    }
+
+        .footer-bottom-section .copyright-text {
+        font-size: 14px;
+        text-align: center;
+        overflow: hidden;
+    }
+}
+
+/* white mode kalendar ikonka */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+}
+
+/* dark mode ikonka */
+.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

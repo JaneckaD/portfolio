@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    background-color: #212121;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    background-color: #191818;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.26);
+    z-index: 5;
+}
+
+.levaStrana {
+    color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+}
+
+.blue {
+    color: #4781EB;
+}
+
+.pravaStrana {
+    color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 32px;
+}
+
+button {
+    border: none;
+    color: none;
+    cursor: pointer;
+    background: none;
+}
+
+.wrap {
+    background-color: 0;
+    width: 1000px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.filtrace {
+    background-color: 0;
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#filtr {
+    margin-right: 20px;
+}
+
+#hledacek {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: black;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+#hledacek::placeholder {
+    color: black;
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+#hledacek:focus {
+    border: none;
+    color: black;
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+.hledani {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: white;
+    background-color: black;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hledani img {
+    width: 20px;
+}
+
+#karty {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    background-color: 0;
+    width: 95%;
+    margin: auto;
+}
+
+.karta, .kartaExpirace {
+    width: 48%;
+    background-color: #191818;
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    font-size: 22px;
+}
+
+.kartaPlus {
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kartaPlus button {
+    width: 100%;
+    height: 100%;
+}
+
+.kartaPlus img {
+    width: 35px;
+}
+
+.kartaExpirace {
+    border: 3px solid red;
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+
+}
+
+.dvojice {
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nazev {
+    font-weight: 600;
+    font-size: 30px;
+    color: #feffff;
+}
+
+.kartaImg {
+    width: 40px;
+    height: 40px;
+}
+
+.datumExpirace {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #feffff;
+}
+
+.castka {
+    margin-left: 10px;
+    color: #feffff;
+}
+
+
+
+.pridaniKarty {
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputNazev {
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: black;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-left: 10px;
+}
+
+.inputCastka {
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: black;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-left: 10px;
+}
+
+.inputDatum {
+    width: 180px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: black;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    border-radius: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+
+.inputImg {
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: black;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    border-radius: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+
+}
+
+
+.inputNazev::placeholder, 
+.inputCastka::placeholder {
+    color: black;
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+.inputNazev:focus,
+.inputCastka:focus {
+    border: none;
+    color: black;
+    font-family: Poppins;
+    border: none;
+    font-weight: 600;
+}
+
+.inputSend {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    color: white;
+    background-color: black;
+    outline: none;
+    font-weight: 600;
+    font-family: Poppins;
+    margin: 0px 10px;
+}
+
+
